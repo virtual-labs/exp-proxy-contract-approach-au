@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "In a Proxy contract approach, what is the primary function of the Proxy contract logic layer?",
+      "answers": {
+        "a": "Managing the state and storage of the Proxy contract.",
+        "b": "Executing complex computations and functionalities.",
+        "c": "Interacting with the Ethereum blockchain.",
+        "d": "Storing and retrieving data from the blockchain."
+      },
+      "explanations": {
+        "a": "Managing state and storage is typically the responsibility of the storage layer.",
+        "b": "Correct! The Proxy contract logic layer is primarily responsible for executing complex computations and functionalities.",
+        "c": "Interacting with the Ethereum blockchain is a broader responsibility involving both layers.",
+        "d": "Storing and retrieving data is more associated with the storage layer."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How does a Proxy contract storage layer contribute to the overall functionality?",
+      "answers": {
+        "a": "Executing complex computations.",
+        "b": "Interacting with the Ethereum blockchain.",
+        "c": "Managing the state and storage of the Proxy contract.",
+        "d": "Handling external calls from other contracts."
+      },
+      "explanations": {
+        "a": "Executing computations is typically handled by the logic layer, not the storage layer.",
+        "b": "Interacting with the Ethereum blockchain is a broader responsibility involving both layers.",
+        "c": "Correct! The Proxy contract storage layer is responsible for managing the state and storage.",
+        "d": "Handling external calls is generally associated with the logic layer, not the storage layer."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Why might using a Proxy contract be beneficial in smart contract development?",
+      "answers": {
+        "a": "To increase the gas limit for transactions.",
+        "b": "To delegate control and upgradeability.",
+        "c": "To encrypt sensitive data in the blockchain.",
+        "d": "To reduce the overall complexity of the contract code."
+      },
+      "explanations": {
+        "a": "Increasing the gas limit is not a primary reason for using a Proxy contract.",
+        "b": "Correct! Using a Proxy contract allows for better control delegation and upgradeability.",
+        "c": "Encrypting data is not a typical role of Proxy contracts.",
+        "d": "Reducing overall complexity is not a primary benefit of using a Proxy contract."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    }
+  ]
+}

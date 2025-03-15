@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the purpose of a Proxy contract in the context of smart contracts?",
+      "answers": {
+        "a": "To execute complex computations in the blockchain.",
+        "b": "To delegate control and functionalities to another contract.",
+        "c": "To store large amounts of data in the blockchain.",
+        "d": "To secure private keys in a smart contract."
+      },
+      "explanations": {
+        "a": "This is not the primary purpose of a Proxy contract.",
+        "b": "Correct! A Proxy contract delegates control and functionalities to another contract.",
+        "c": "Proxy contracts are not primarily used for storing large amounts of data.",
+        "d": "Securing private keys is not a typical role of Proxy contracts."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the Proxy contract storage layer responsible for?",
+      "answers": {
+        "a": "Executing complex computations.",
+        "b": "Storing large amounts of data.",
+        "c": "Managing the state and storage of the Proxy contract.",
+        "d": "Handling external calls from other contracts."
+      },
+      "explanations": {
+        "a": "Executing computations is typically handled by the logic layer, not the storage layer.",
+        "b": "Storing data is not the primary responsibility of the storage layer in a Proxy contract.",
+        "c": "Correct! The Proxy contract storage layer is responsible for managing the state and storage.",
+        "d": "Handling external calls is generally associated with the logic layer, not the storage layer."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the Proxy contract logic layer handle?",
+      "answers": {
+        "a": "Storing and managing data.",
+        "b": "Executing complex computations.",
+        "c": "Interacting with the Ethereum blockchain.",
+        "d": "Handling state and storage of the Proxy contract."
+      },
+      "explanations": {
+        "a": "Storing and managing data is typically the responsibility of the storage layer.",
+        "b": "Correct! The Proxy contract logic layer handles executing complex computations.",
+        "c": "Interacting with the Ethereum blockchain is a broader responsibility that involves both layers.",
+        "d": "Handling state and storage is primarily associated with the storage layer."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
