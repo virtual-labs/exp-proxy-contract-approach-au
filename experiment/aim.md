@@ -1,2 +1,2 @@
-### Aim of the Experiment
-The main objective of this experiment is to demonstrate the proxy contract approach and to showcase upgrading contracts without disrupting the existing contract address or user interactions.
+
+To study and implement the Proxy Contract approach by separating the storage layer and the logic layer in smart contracts.
