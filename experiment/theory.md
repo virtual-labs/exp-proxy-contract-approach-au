@@ -24,13 +24,8 @@ Proxy contracts, on the other hand, separate the contract interface from its imp
 | Modular Design            | Promotes modularity by separating concerns between the proxy and the target contract | Less modular due to the tight coupling of interface and implementation |
 | Typical Use Cases         | Managing token contracts, DEXs, NFTs, and governance contracts | Used for various purposes such as tokenization, crowdfunding, and DAOs |
 
-**Different Types of Proxy Contracts**
-Transparent Proxy: Simple proxy, reveals the target contract it interacts with.
-Upgradeable Proxy: Allows updating the logic contract while maintaining the same proxy address.
-Storage Proxy: Handles storage for the target contract, separating it from the logic layer.
-Hybrid Proxy: Combines features of multiple types for specific needs.
+## What Are Upgradeable Smart Contracts?
 
-**What Are Upgradeable Smart Contracts?**
-Smart contracts are unchangeable once deployed. This immutability builds trust among DeFi parties since even the contract’s creator can’t alter it. However, this also means they can’t be updated, posing risks if security or other issues arise.
-Upgradeable Smart Contracts (USC) solve these issues by allowing updates without the need to migrate all activity to a new address.
-The earliest and most intuitive method of updating smart contracts with no state migrations is the data-separation pattern. Here, we separate a smart contract into logic and storage contracts, storing and changing the state respectively. The problem with this method is evident: constant calls between logic and storage require gas.
+Smart contracts are unchangeable once deployed. This immutability builds trust among DeFi participants since even the contract’s creator cannot alter it. However, this also means they cannot be updated, which can pose risks if security or other issues arise.
+
+Upgradeable Smart Contracts (USC) address this problem by allowing updates without requiring all activity to migrate to a new contract address. One common method of creating upgradeable contracts is the **data-separation pattern**, where the contract is split into a **logic contract** and a **storage contract**, with the logic handling computations and the storage contract managing the state.
