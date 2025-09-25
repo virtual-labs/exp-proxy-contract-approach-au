@@ -2,52 +2,103 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What is the purpose of a Proxy contract in the context of smart contracts?",
+      "question": "What is the main advantage of using a Proxy contract over a traditional smart contract?",
       "answers": {
-        "a": "To execute complex computations in the blockchain.",
-        "b": "To delegate control and functionalities to another contract.",
-        "c": "To store large amounts of data in the blockchain.",
-        "d": "To secure private keys in a smart contract."
+        "a": "It can execute transactions faster than traditional smart contracts.",
+        "b": "It allows upgrading contract logic without changing the contract address.",
+        "c": "It stores more data than a traditional smart contract.",
+        "d": "It automatically secures the contract from all vulnerabilities."
       },
       "explanations": {
-        "a": "This is not the primary purpose of a Proxy contract.",
-        "b": "Correct! A Proxy contract delegates control and functionalities to another contract.",
-        "c": "Proxy contracts are not primarily used for storing large amounts of data.",
-        "d": "Securing private keys is not a typical role of Proxy contracts."
+        "a": "Execution speed is not the main advantage of Proxy contracts.",
+        "b": "Correct! Proxy contracts allow upgrading the logic without changing the contract address.",
+        "c": "Data storage capacity is not a distinguishing feature.",
+        "d": "Proxy contracts do not automatically secure against all vulnerabilities."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "What is the Proxy contract storage layer responsible for?",
+      "question": "Which feature separates a Proxy contract from a traditional smart contract?",
       "answers": {
-        "a": "Executing complex computations.",
-        "b": "Storing large amounts of data.",
-        "c": "Managing the state and storage of the Proxy contract.",
-        "d": "Handling external calls from other contracts."
+        "a": "It combines both interface and implementation in one contract.",
+        "b": "It separates the interface from the implementation, allowing independent upgrades.",
+        "c": "It stores all user data off-chain.",
+        "d": "It requires redeployment for every logic change."
       },
       "explanations": {
-        "a": "Executing computations is typically handled by the logic layer, not the storage layer.",
-        "b": "Storing data is not the primary responsibility of the storage layer in a Proxy contract.",
-        "c": "Correct! The Proxy contract storage layer is responsible for managing the state and storage.",
-        "d": "Handling external calls is generally associated with the logic layer, not the storage layer."
+        "a": "This describes a traditional smart contract, not a proxy.",
+        "b": "Correct! Proxy contracts separate interface and implementation for independent changes.",
+        "c": "Off-chain storage is not specific to proxy contracts.",
+        "d": "Proxy contracts do not require redeployment for logic changes."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "What does the Proxy contract logic layer handle?",
+      "question": "Which of the following is a type of Proxy contract?",
       "answers": {
-        "a": "Storing and managing data.",
-        "b": "Executing complex computations.",
-        "c": "Interacting with the Ethereum blockchain.",
-        "d": "Handling state and storage of the Proxy contract."
+        "a": "Transparent Proxy",
+        "b": "Hybrid Proxy",
+        "c": "Upgradeable Proxy",
+        "d": "All of the above"
       },
       "explanations": {
-        "a": "Storing and managing data is typically the responsibility of the storage layer.",
-        "b": "Correct! The Proxy contract logic layer handles executing complex computations.",
-        "c": "Interacting with the Ethereum blockchain is a broader responsibility that involves both layers.",
-        "d": "Handling state and storage is primarily associated with the storage layer."
+        "a": "Transparent Proxy is one type, but not the only one.",
+        "b": "Hybrid Proxy is also a type, but not the only one.",
+        "c": "Upgradeable Proxy is another type, but not the only one.",
+        "d": "Correct! Transparent, Upgradeable, Storage, and Hybrid are types of Proxy contracts."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is an Upgradeable Smart Contract (USC)?",
+      "answers": {
+        "a": "A smart contract that automatically fixes bugs.",
+        "b": "A contract that can be updated without changing its address.",
+        "c": "A contract that stores all logic off-chain.",
+        "d": "A traditional immutable smart contract."
+      },
+      "explanations": {
+        "a": "USCs do not automatically fix bugs.",
+        "b": "Correct! USC allows updating the logic without deploying a new address.",
+        "c": "USCs do not necessarily store logic off-chain.",
+        "d": "Traditional smart contracts are immutable, unlike USCs."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why might a Proxy contract improve security?",
+      "answers": {
+        "a": "It encrypts all transactions automatically.",
+        "b": "It adds a layer between users and the logic contract, making exploitation harder.",
+        "c": "It prevents users from interacting with the contract directly.",
+        "d": "It stores user private keys safely."
+      },
+      "explanations": {
+        "a": "Encryption is not provided automatically by Proxy contracts.",
+        "b": "Correct! Proxy contracts add an extra layer, reducing direct exposure to vulnerabilities.",
+        "c": "Users can still interact, the proxy just forwards calls.",
+        "d": "Private key storage is unrelated to Proxy contracts."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is a drawback of the data-separation pattern in Upgradeable Smart Contracts?",
+      "answers": {
+        "a": "It prevents upgrades entirely.",
+        "b": "Constant calls between logic and storage increase gas costs.",
+        "c": "It merges logic and storage, reducing modularity.",
+        "d": "It automatically redeploys contracts for each update."
+      },
+      "explanations": {
+        "a": "Data-separation allows upgrades, so this is incorrect.",
+        "b": "Correct! Frequent interactions between logic and storage can increase gas costs.",
+        "c": "Data-separation increases modularity, not reduces it.",
+        "d": "Contracts are not automatically redeployed in this pattern."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
