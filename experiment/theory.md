@@ -1,4 +1,3 @@
-### Theory
 
 **Proxy Contract**
 Traditional smart contracts encapsulate both the contract interface and its implementation. Once deployed, their logic cannot be modified without redeploying the entire contract. This can be problematic for decentralized applications (DApps) as it disrupts user interactions and may require users to switch to a new contract address.
@@ -13,7 +12,7 @@ Proxy contracts, on the other hand, separate the contract interface from its imp
 
 **Enhanced Security:** Proxy contracts add an extra layer of protection, making it harder for attackers to exploit vulnerabilities in the target contract.
 
-**Gas Optimization:** Proxy contracts can optimize gas costs by delegating certain tasks to other contracts, reducing computational overhead.
+<!-- **Gas Optimization:** Proxy contracts can optimize gas costs by delegating certain tasks to other contracts, reducing computational overhead. -->
 
 **Modular Design:** Proxy contracts promote modular design, making complex smart contracts easier to manage and maintain.
 
