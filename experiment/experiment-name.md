@@ -1,1 +1,1 @@
-<h2>Proxy contract approach</h2>
+<h2>Proxy Contract Approach</h2>
